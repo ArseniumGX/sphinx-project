@@ -1,27 +1,36 @@
 # Sphinx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+Projeto frontend desenvolvido em Angular responsável por fazer cadastro de clientes e listagem dos dados cadastrados. Aplicativo possui ao todo três telas: incial, cadastro de usuário e listagem dos usuários cadastrados. Acessando a aplicação você verá a tela principal com o nome da aplicação, um menu de navegação com duas opção a seguir, a area principal onde todo conteúdo é renderizado e um footer. Não há uma opção de navegação para voltar ao home da página, mas clicando no nome do projeto é possível fazer esse retorno.
 
-## Development server
+### Cadastro
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ao acessar o menu de navegação `Cadastro` você será redirecinado ao cadastro de usuário. Aqui você pode adicionar as informações de código, nome, cpf, telefone e endereço do usuário. Ao preencher todas as informações necessária e clicar em Salvar você é redirecionado a tela que estava anteriormente. Essa última funcionalidade também é obtida ao clicar no botão cancelar, nesse caso os dados não serão salvos.
 
-## Code scaffolding
+Os dados são salvos no localStorage do navegador, então caso feche o navegador e abra novamente os dados estarão presentes para.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Listagem
 
-## Build
+A listagem de usuários cadastrados pode ser visuazada acessando o meno de navegação `Listagem`. Essa tela possui um filtro onde você pode pesquisar um usuário por nome ou número de telefone selecionando a opção desejada e digitando a informação que deseja buscar. É necessário digitar no mínimo 3 caracteres na pesquisa para que a busca pela informação inicie. Por padrão sempre que a opção `Todos` estiver checaga, o campo de digitar informação é desabilitado e limpo. A listagem é feita de forma dinâmica a medida que a informação é digitada, então não é necessário da enter ao digitar algo na pesquisa. Vale ressaltar que para que a listagem funcione é necessário que ao menos um usuário esteja cadastrado, caso contrário apenas a tela com os filtros será exibida sem as informações.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Observações
 
-## Running unit tests
+Devido à falta de tempo e alguns problemas enfrentados, não foi possível aplicar responsividade para telas maiores. O projeto foi desenvolvido utilizando o preceito mobile first. O a interface inteira foi desenhado seguindo meu próprio estilo e preferência minimalista. Você pode acessar o design desenvolvido [clicando aqui](https://www.figma.com/file/rd7NE1dMnvZgwv6Vz8nj1I/Sphinx?type=design&node-id=4-74&mode=design&t=UwpDCE5yjgWRoCV6-0).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Techs Utilizados
 
-## Running end-to-end tests
+- Node 18.17.1
+- Yarn 1.22.19
+- Angular 17.0.8
+- Sass
+- Visual Studio Code
+- Figma
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Preparando Ambiente
 
-## Further help
+Para inicializar esse aplicação localmente, antes de tudo clone o projeto para uma pasta na sua máquina. Feito isso, dentro do diretório do projeto, execute `npm i` para instalar as dependências ou `yarn` se utiliza Yarn.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Após isso você pode executar `npm run start` ou `yarn start` para inicializar a aplicação. Por padrão a aplicação será incializada na porta `4200`, acesse http://localhost:4200 para acessar o app.
+
+## Licença
+
+Este projeto está licenciado sobre [licença MIT](./License).
