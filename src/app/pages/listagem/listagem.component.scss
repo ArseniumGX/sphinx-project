@@ -1,0 +1,79 @@
+@use "../../../styles/base";
+
+h2 {
+  font-size: base.pxToRem(18px);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.filtro {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6px;
+  width: 300px;
+  border: 1px solid base.$corSombreamento;
+  padding: 5px 20px;
+  row-gap: 10px;
+  border-radius: 6px;
+
+  h3 {
+    font-size: 1rem;
+    color: base.$corSecundaria;
+    text-align: center;
+  }
+
+  .ckbox {
+    display: inline-flex;
+    column-gap: 16px;
+
+    label {
+      font-size: 0.875rem;
+    }
+  }
+
+  input {
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    outline: none;
+    border: none;
+    padding-left: 12px;
+    border-left: 12px solid base.$corSombreamento;
+
+    &:disabled {
+      background-color: base.$corTerciaria;
+      border-bottom: 1px solid base.$corTerciaria;
+    }
+
+    &:enabled {
+      background-color: base.$corPrimaria;
+      border-bottom: 1px solid base.$corSombreamento;
+    }
+  }
+}
+
+.clientes {
+  margin-top: 6px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 4px;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 12px;
+
+  li {
+    padding: 0.465rem;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 322px;
+    background-color: base.$corTerciaria;
+    color: base.$corSecundaria;
+    border-radius: 6px;
+    font-size: 0.875rem;
+
+    b {
+      font-weight: 700;
+    }
+  }
+}

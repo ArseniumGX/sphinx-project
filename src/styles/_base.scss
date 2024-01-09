@@ -15,3 +15,11 @@ label,
 input button {
   font-family: $font-family;
 }
+
+html,
+body,
+main,
+header,
+footer {
+  overflow-x: hidden;
+}

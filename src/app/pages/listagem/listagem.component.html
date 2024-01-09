@@ -1,1 +1,51 @@
-<p>listagem works!</p>
+<h2>Listagem de Usuários</h2>
+<div class="filtro">
+  <h3>Filtro</h3>
+  <div class="ckbox">
+    <div>
+      <label for="todos">Todos</label>
+      <input
+        type="radio"
+        name="filtro"
+        value=""
+        id="todos"
+        [defaultChecked]="true"
+        (change)="filtrarPor('todos')"
+      />
+    </div>
+    <div>
+      <label for="nome">Nome</label>
+      <input
+        type="radio"
+        name="filtro"
+        id="nome"
+        (change)="filtrarPor('nome')"
+      />
+    </div>
+    <div>
+      <label for="telefone">Telefone</label>
+      <input
+        type="radio"
+        name="filtro"
+        id="telefone"
+        (change)="filtrarPor('telefone')"
+      />
+    </div>
+  </div>
+  <input
+    type="text"
+    nome="pesquisa"
+    [(ngModel)]="input"
+    (keyup)="filtrar()"
+    [disabled]="!filtro"
+  />
+</div>
+<ul class="clientes">
+  <li *ngFor="let client of clientes">
+    <span> <b>CÓDIGO: </b>{{ client.codigo }} </span>
+    <span> <b>NOME: </b>{{ client.nome }} </span>
+    <span> <b>CPF: </b>{{ client.cpf }} </span>
+    <span> <b>TELEFONE: </b>{{ client.telefone }} </span>
+    <span> <b>ENDEREÇO: </b>{{ client.endereco }} </span>
+  </li>
+</ul>

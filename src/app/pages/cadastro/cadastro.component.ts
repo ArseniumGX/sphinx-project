@@ -14,7 +14,9 @@ export class CadastroComponent {
   cpf: string = '';
   telefone: string = '';
   endereco: string = '';
-  protected clientes: any[] = [];
+  protected clientes: any[] = localStorage.getItem('clientes')
+    ? JSON.parse(localStorage.getItem('clientes') as string)
+    : [];
   protected cliente = {};
 
   salvar() {

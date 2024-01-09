@@ -1,0 +1,56 @@
+@use "../../../styles/base";
+
+h2 {
+  font-size: base.pxToRem(18px);
+  color: base.$corSecundaria;
+  text-align: center;
+  margin-top: 12px;
+}
+
+form {
+  padding: 14px 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 90vw;
+
+  .fieldarea {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 2px;
+
+    label {
+      font-size: 1rem;
+      color: base.$corSecundaria;
+    }
+
+    input {
+      height: 32px;
+      padding-left: 6px;
+      outline: none;
+      border: none;
+      border-bottom-left-radius: 6px;
+      border-top-left-radius: 6px;
+      border-left: 16px solid base.$corSecundaria;
+      border-bottom: 1px solid base.$corSecundaria;
+      margin-bottom: 12px;
+      font-size: 1rem;
+      color: base.$corSombreamento;
+    }
+  }
+
+  .btn {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 4px;
+
+    button {
+      background-color: base.$corComplementar;
+      border: none;
+      height: 32px;
+      border-radius: 6px;
+      font-weight: 700;
+      color: base.$corPrimaria;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
