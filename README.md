@@ -33,4 +33,4 @@ Após isso você pode executar `npm run start` ou `yarn start` para inicializar 
 
 ## Licença
 
-Este projeto está licenciado sobre [licença MIT](./License).
+Este projeto está licenciado sobre [licença MIT](./LICENSE).
