@@ -1,0 +1,38 @@
+@use "../styles/base";
+
+header {
+  background-color: base.$corSecundaria;
+  height: 12vh;
+  padding: base.pxToRem(5px);
+
+  app-navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+main {
+  min-height: 65vh;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding: 5px 32px;
+  height: 20vh;
+  background-color: base.$corSecundaria;
+
+  app-footer {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 0.625rem;
+  }
+}

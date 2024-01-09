@@ -1,0 +1,14 @@
+@use "../../../styles/base";
+
+.socials {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+
+p {
+  color: base.$corPrimaria;
+  font-size: base.pxToRem(12px);
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+@use "../../../styles/base";
+
+a {
+  text-decoration: none;
+  color: base.$corPrimaria;
+}
+
+h1 {
+  color: base.$corPrimaria;
+  text-align: center;
+  font-weight: 700;
+  font-size: base.pxToRem(23px);
+}
+
+nav {
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+
+    li {
+      width: base.pxToRem(150px);
+      height: base.pxToRem(34px);
+      border-radius: 8px;
+      background-color: base.$corComplementar;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        font-weight: 400;
+      }
+    }
+  }
+}

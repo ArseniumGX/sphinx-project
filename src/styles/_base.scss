@@ -1,0 +1,17 @@
+@import "./functions";
+@import "./mixins";
+@import "./variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+label,
+input button {
+  font-family: $font-family;
+}

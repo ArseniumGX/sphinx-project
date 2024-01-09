@@ -1,0 +1,6 @@
+@use "../../../styles/base";
+
+p {
+  text-align: center;
+  font-size: base.pxToRem(28px);
+}
